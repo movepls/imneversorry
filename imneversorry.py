@@ -7,6 +7,7 @@ import rips
 import teekkari
 import valitsin
 import oppija
+import lounas
 
 cfg = ConfigParser()
 cfg.read('env.cfg')
@@ -17,8 +18,9 @@ rir = rips.Rips()
 vit = teekkari.Teekkari()
 vai = valitsin.Valitsin()
 opi = oppija.Oppija()
+lou = lounas.Lounas()
 
-objects = [rir, vit, vai, opi]
+objects = [rir, vit, vai, opi, lou]
 
 def allMessages(bot, update):
     for obj in objects:
